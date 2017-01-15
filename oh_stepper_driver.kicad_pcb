@@ -1283,7 +1283,7 @@
   (segment (start 136.11 72.04) (end 137.82 72.04) (width 0.25) (layer F.Cu) (net 24) (tstamp 587A3CC3))
   (segment (start 135.82 71.75) (end 136.11 72.04) (width 0.25) (layer F.Cu) (net 24) (tstamp 587A3CC2))
   (segment (start 136.65 71.25) (end 132.9 71.25) (width 0.25) (layer F.Cu) (net 25) (status 30))
-  (segment (start 136.65 73.75) (end 132.9 73.75) (width 0.25) (layer F.Cu) (net 26) (status C00000))
+  (segment (start 136.65 73.75) (end 132.9 73.75) (width 0.25) (layer F.Cu) (net 26) (status 30))
   (segment (start 136.27 74.53) (end 137.77 74.53) (width 0.25) (layer F.Cu) (net 27))
   (segment (start 135.99 74.25) (end 136.27 74.53) (width 0.25) (layer F.Cu) (net 27) (tstamp 587A3CFF))
   (segment (start 132.9 74.25) (end 135.99 74.25) (width 0.25) (layer F.Cu) (net 27) (status 10))
