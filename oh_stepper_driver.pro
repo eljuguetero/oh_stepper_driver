@@ -1,4 +1,4 @@
-update=dom 15 ene 2017 09:02:27 COT
+update=dom 15 ene 2017 20:55:29 COT
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=libs/csd18531q5a
 LibName32=libs/drv8711
+LibName33=libs/stm32f446_lqfp64
