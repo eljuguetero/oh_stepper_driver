@@ -1,0 +1,437 @@
+EESchema Schematic File Version 2
+LIBS:oh_stepper_driver-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:csd18531q5a
+LIBS:drv8711
+LIBS:stm32f446_lqfp64
+LIBS:abm8g
+LIBS:oh_stepper_driver-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR021
+U 1 1 587A445C
+P 3950 5000
+F 0 "#PWR021" H 3950 4750 50  0001 C CNN
+F 1 "GND" H 3955 4827 50  0000 C CNN
+F 2 "" H 3950 5000 50  0000 C CNN
+F 3 "" H 3950 5000 50  0000 C CNN
+	1    3950 5000
+	1    0    0    -1  
+$EndComp
+Text Label 5050 2550 2    60   ~ 0
+AOUT1
+Text Label 5050 2650 2    60   ~ 0
+A1HS
+Text Label 5050 2750 2    60   ~ 0
+A1LS
+Text Label 5050 2850 2    60   ~ 0
+AISENP
+Text Label 5050 2950 2    60   ~ 0
+AISENN
+Text Label 5050 3050 2    60   ~ 0
+A2LS
+Text Label 5050 3150 2    60   ~ 0
+A2HS
+Text Label 5050 3250 2    60   ~ 0
+AOUT2
+Text Label 5050 3650 2    60   ~ 0
+BOUT1
+Text Label 5050 3750 2    60   ~ 0
+B1HS
+Text Label 5050 3850 2    60   ~ 0
+B1LS
+Text Label 5050 3950 2    60   ~ 0
+BISENP
+Text Label 5050 4050 2    60   ~ 0
+BISENN
+Text Label 5050 4150 2    60   ~ 0
+B2LS
+Text Label 5050 4250 2    60   ~ 0
+B2HS
+Text Label 5050 4350 2    60   ~ 0
+BOUT2
+$Comp
+L C_Small C5
+U 1 1 587A4D91
+P 5050 4600
+F 0 "C5" H 5142 4646 50  0000 L CNN
+F 1 "1000pF" H 5142 4555 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5050 4600 50  0001 C CNN
+F 3 "" H 5050 4600 50  0000 C CNN
+	1    5050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 587A506C
+P 5050 4800
+F 0 "#PWR022" H 5050 4550 50  0001 C CNN
+F 1 "GND" H 5055 4627 50  0000 C CNN
+F 2 "" H 5050 4800 50  0000 C CNN
+F 3 "" H 5050 4800 50  0000 C CNN
+	1    5050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 587A2B22
+P 2150 3050
+F 0 "C1" H 2242 3096 50  0000 L CNN
+F 1 "0.1uF" H 2242 3005 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2150 3050 50  0001 C CNN
+F 3 "" H 2150 3050 50  0000 C CNN
+	1    2150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 587A2EDF
+P 2500 2500
+F 0 "C3" H 2592 2546 50  0000 L CNN
+F 1 "0.1uF" H 2592 2455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2500 2500 50  0001 C CNN
+F 3 "" H 2500 2500 50  0000 C CNN
+	1    2500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 587A2F5D
+P 2300 2300
+F 0 "C2" H 2392 2346 50  0000 L CNN
+F 1 "1uF" H 2392 2255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2300 2300 50  0001 C CNN
+F 3 "" H 2300 2300 50  0000 C CNN
+	1    2300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C4
+U 1 1 587A2F63
+P 2600 3050
+F 0 "C4" H 2692 3096 50  0000 L CNN
+F 1 "1uF" H 2692 3005 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2600 3050 50  0001 C CNN
+F 3 "" H 2600 3050 50  0000 C CNN
+	1    2600 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2550 5050 2550
+Wire Wire Line
+	4750 2650 5050 2650
+Wire Wire Line
+	4750 2750 5050 2750
+Wire Wire Line
+	4750 2850 5050 2850
+Wire Wire Line
+	4750 2950 5050 2950
+Wire Wire Line
+	4750 3050 5050 3050
+Wire Wire Line
+	4750 3150 5050 3150
+Wire Wire Line
+	4750 3250 5050 3250
+Wire Wire Line
+	4750 3650 5050 3650
+Wire Wire Line
+	4750 3750 5050 3750
+Wire Wire Line
+	4750 3850 5050 3850
+Wire Wire Line
+	4750 3950 5050 3950
+Wire Wire Line
+	4750 4050 5050 4050
+Wire Wire Line
+	4750 4150 5050 4150
+Wire Wire Line
+	4750 4250 5050 4250
+Wire Wire Line
+	4750 4350 5050 4350
+Wire Wire Line
+	5050 4450 4750 4450
+Wire Wire Line
+	5050 4450 5050 4500
+Wire Wire Line
+	5050 4700 5050 4800
+Wire Wire Line
+	3800 4900 3800 4950
+Wire Wire Line
+	3800 4950 4100 4950
+Wire Wire Line
+	4100 4950 4100 4900
+Wire Wire Line
+	4000 4900 4000 4950
+Connection ~ 4000 4950
+Wire Wire Line
+	3900 4900 3900 4950
+Connection ~ 3900 4950
+Wire Wire Line
+	3950 5000 3950 4950
+Connection ~ 3950 4950
+Wire Wire Line
+	2525 3500 2900 3500
+Wire Wire Line
+	2525 3600 2900 3600
+Wire Wire Line
+	2525 3700 2900 3700
+Wire Wire Line
+	2525 3800 2900 3800
+Wire Wire Line
+	2525 3900 2900 3900
+Wire Wire Line
+	2900 4000 2525 4000
+Wire Wire Line
+	2525 4100 2900 4100
+Wire Wire Line
+	2900 4200 2525 4200
+Wire Wire Line
+	2525 4300 2900 4300
+Wire Wire Line
+	2900 4400 2525 4400
+Wire Wire Line
+	2525 4500 2900 4500
+Wire Wire Line
+	2900 4600 2525 4600
+$Comp
+L GND #PWR023
+U 1 1 587A44CC
+P 2150 3225
+F 0 "#PWR023" H 2150 2975 50  0001 C CNN
+F 1 "GND" H 2155 3052 50  0000 C CNN
+F 2 "" H 2150 3225 50  0000 C CNN
+F 3 "" H 2150 3225 50  0000 C CNN
+	1    2150 3225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2850 2150 2950
+Wire Wire Line
+	2600 3150 2600 3175
+Wire Wire Line
+	2600 3175 2150 3175
+Wire Wire Line
+	2150 3150 2150 3225
+Connection ~ 2150 3175
+$Comp
+L VM #PWR024
+U 1 1 587A4A3A
+P 2150 2100
+F 0 "#PWR024" H 2150 1950 50  0001 C CNN
+F 1 "VM" H 2165 2273 50  0000 C CNN
+F 2 "" H 2150 2100 50  0000 C CNN
+F 3 "" H 2150 2100 50  0000 C CNN
+	1    2150 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2600 2800 2600
+Wire Wire Line
+	2800 2600 2800 2550
+Wire Wire Line
+	2800 2550 2900 2550
+Wire Wire Line
+	2900 2450 2800 2450
+Wire Wire Line
+	2800 2450 2800 2400
+Wire Wire Line
+	2800 2400 2500 2400
+Wire Wire Line
+	2900 2650 2300 2650
+Wire Wire Line
+	2300 2650 2300 2400
+Wire Wire Line
+	2150 2100 2150 2750
+Wire Wire Line
+	2150 2150 2300 2150
+Wire Wire Line
+	2300 2150 2300 2200
+Wire Wire Line
+	2150 2750 2900 2750
+Connection ~ 2150 2150
+$Comp
+L DRV8711 U1
+U 1 1 587A59C2
+P 3800 3450
+F 0 "U1" H 3150 4675 60  0000 C CNB
+F 1 "DRV8711" H 3900 3450 60  0000 C CNN
+F 2 "oh_stepper:HTSSOP_38_Pitch0.5mm" H 3950 4450 60  0001 C CNN
+F 3 "" H 3950 4450 60  0001 C CNN
+	1    3800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2850 2150 2850
+Wire Wire Line
+	2900 2950 2600 2950
+Wire Wire Line
+	8750 2650 9450 2650
+Wire Wire Line
+	8750 2750 9450 2750
+$Sheet
+S 7100 2450 1650 2500
+U 587AAF59
+F0 "FETs" 60
+F1 "FETs.sch" 60
+F2 "A1HS" I L 7100 2650 60 
+F3 "A1LS" I L 7100 2750 60 
+F4 "A2HS" I L 7100 2900 60 
+F5 "A2LS" I L 7100 3000 60 
+F6 "B1HS" I L 7100 3600 60 
+F7 "B1LS" I L 7100 3700 60 
+F8 "B2HS" I L 7100 3850 60 
+F9 "B2LS" I L 7100 3950 60 
+F10 "AISENN" O L 7100 3250 60 
+F11 "BISENN" O L 7100 4200 60 
+F12 "AOUT1" O R 8750 2650 60 
+F13 "AOUT2" O R 8750 2750 60 
+F14 "BOUT1" O R 8750 3000 60 
+F15 "BOUT2" O R 8750 3100 60 
+F16 "AISENP" O L 7100 3150 60 
+F17 "BISENP" O L 7100 4100 60 
+$EndSheet
+Text Label 6700 2650 0    60   ~ 0
+A1HS
+Text Label 6700 2750 0    60   ~ 0
+A1LS
+Text Label 6700 3000 0    60   ~ 0
+A2LS
+Text Label 6700 2900 0    60   ~ 0
+A2HS
+Wire Wire Line
+	7100 2650 6700 2650
+Wire Wire Line
+	7100 2750 6700 2750
+Wire Wire Line
+	7100 3000 6700 3000
+Wire Wire Line
+	7100 2900 6700 2900
+Text Label 6700 3600 0    60   ~ 0
+B1HS
+Text Label 6700 3700 0    60   ~ 0
+B1LS
+Text Label 6700 3950 0    60   ~ 0
+B2LS
+Text Label 6700 3850 0    60   ~ 0
+B2HS
+Wire Wire Line
+	7100 3600 6700 3600
+Wire Wire Line
+	7100 3700 6700 3700
+Wire Wire Line
+	7100 3950 6700 3950
+Wire Wire Line
+	7100 3850 6700 3850
+Text Label 6700 3250 0    60   ~ 0
+AISENN
+Wire Wire Line
+	7100 3250 6700 3250
+Text Label 9100 2750 2    60   ~ 0
+AOUT2
+Text Label 9100 3000 2    60   ~ 0
+BOUT1
+Text Label 9100 2650 2    60   ~ 0
+AOUT1
+Text Label 9100 3100 2    60   ~ 0
+BOUT2
+Wire Wire Line
+	8750 3000 9200 3000
+Wire Wire Line
+	8750 3100 9300 3100
+$Comp
+L CONN_01X04 P1
+U 1 1 587B6637
+P 9650 2800
+F 0 "P1" H 9728 2841 50  0000 L CNN
+F 1 "CONN_01X04" H 9728 2750 50  0000 L CNN
+F 2 "Connectors:bornier4" H 9650 2800 50  0001 C CNN
+F 3 "" H 9650 2800 50  0000 C CNN
+	1    9650 2800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9200 3000 9200 2850
+Wire Wire Line
+	9200 2850 9450 2850
+Wire Wire Line
+	9450 2950 9300 2950
+Wire Wire Line
+	9300 2950 9300 3100
+Text Label 6700 3150 0    60   ~ 0
+AISENP
+Wire Wire Line
+	7100 3150 6700 3150
+Text Label 6700 4200 0    60   ~ 0
+BISENN
+Wire Wire Line
+	7100 4200 6700 4200
+Text Label 6700 4100 0    60   ~ 0
+BISENP
+Wire Wire Line
+	7100 4100 6700 4100
+Text HLabel 2525 3500 0    60   Input ~ 0
+SLEEPn
+Text HLabel 2525 3600 0    60   Input ~ 0
+RESET
+Text HLabel 2525 3700 0    60   Input ~ 0
+STEP_AIN1
+Text HLabel 2525 3800 0    60   Input ~ 0
+DIR_AIN2
+Text HLabel 2525 3900 0    60   Input ~ 0
+BIN1
+Text HLabel 2525 4000 0    60   Input ~ 0
+BIN2
+Text HLabel 2525 4100 0    60   Input ~ 0
+SCLK
+Text HLabel 2525 4200 0    60   Input ~ 0
+SDATI
+Text HLabel 2525 4300 0    60   Input ~ 0
+SCS
+Text HLabel 2525 4400 0    60   Output ~ 0
+SDATAO
+Text HLabel 2525 4500 0    60   Output ~ 0
+FAULTn
+Text HLabel 2525 4600 0    60   Output ~ 0
+STALLn
+$EndSCHEMATC
