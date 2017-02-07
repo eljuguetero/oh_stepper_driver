@@ -1,4 +1,8 @@
 EESchema Schematic File Version 2
+LIBS:csd18531q5a
+LIBS:drv8711
+LIBS:stm32f446_lqfp64
+LIBS:abm8g
 LIBS:oh_stepper_driver-rescue
 LIBS:power
 LIBS:device
@@ -29,10 +33,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:csd18531q5a
-LIBS:drv8711
-LIBS:stm32f446_lqfp64
-LIBS:abm8g
 LIBS:oh_stepper_driver-cache
 EELAYER 26 0
 EELAYER END
