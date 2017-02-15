@@ -79,7 +79,7 @@ F 1 "CONN_01X02" H 1128 7000 50  0000 L CNN
 F 2 "Connectors:bornier2" H 1050 7050 50  0001 C CNN
 F 3 "" H 1050 7050 50  0000 C CNN
 	1    1050 7050
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L GND #PWR03
@@ -112,7 +112,7 @@ F 1 "CONN_01X02" H 2128 7000 50  0000 L CNN
 F 2 "Connectors:bornier2" H 2050 7050 50  0001 C CNN
 F 3 "" H 2050 7050 50  0000 C CNN
 	1    2050 7050
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L CP1 C6
