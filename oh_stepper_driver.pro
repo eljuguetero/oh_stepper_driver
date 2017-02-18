@@ -1,4 +1,4 @@
-update=lun 06 feb 2017 20:36:12 COT
+update=sáb 18 feb 2017 07:51:19 COT
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,4 @@ LibName31=opto
 LibName32=atmel
 LibName33=contrib
 LibName34=valves
+LibName35=libs/tja1050
