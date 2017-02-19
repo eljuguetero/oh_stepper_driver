@@ -34,6 +34,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:tja1050
+LIBS:as5047d
 LIBS:oh_stepper_driver-cache
 EELAYER 26 0
 EELAYER END

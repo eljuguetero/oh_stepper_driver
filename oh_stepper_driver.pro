@@ -1,4 +1,4 @@
-update=sáb 18 feb 2017 07:51:19 COT
+update=dom 19 feb 2017 17:40:08 COT
 version=1
 last_client=kicad
 [pcbnew]
@@ -64,3 +64,4 @@ LibName32=atmel
 LibName33=contrib
 LibName34=valves
 LibName35=libs/tja1050
+LibName36=libs/as5047d
