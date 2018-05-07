@@ -1,40 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:csd18531q5a
-LIBS:drv8711
-LIBS:stm32f446_lqfp64
-LIBS:abm8g
-LIBS:oh_stepper_driver-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:tja1050
-LIBS:as5047d
+EESchema Schematic File Version 4
 LIBS:oh_stepper_driver-cache
 EELAYER 26 0
 EELAYER END
@@ -51,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L GND #PWR5
+L power:GND #PWR5
 U 1 1 587AE5B3
 P 1400 7200
 F 0 "#PWR5" H 1400 6950 50  0001 C CNN
@@ -62,7 +26,7 @@ F 3 "" H 1400 7200 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L VM #PWR4
+L oh_stepper_driver-rescue:VM #PWR4
 U 1 1 587AE5B4
 P 1400 6950
 F 0 "#PWR4" H 1400 6800 50  0001 C CNN
@@ -73,7 +37,7 @@ F 3 "" H 1400 6950 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P2
+L oh_stepper_driver-rescue:CONN_01X02 P2
 U 1 1 587B659B
 P 1050 7050
 F 0 "P2" H 1128 7091 50  0000 L CNN
@@ -84,7 +48,7 @@ F 3 "" H 1050 7050 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR8
+L power:GND #PWR8
 U 1 1 587BB2AD
 P 2400 7200
 F 0 "#PWR8" H 2400 6950 50  0001 C CNN
@@ -95,7 +59,7 @@ F 3 "" H 2400 7200 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L VM #PWR7
+L oh_stepper_driver-rescue:VM #PWR7
 U 1 1 587BB2B3
 P 2400 6950
 F 0 "#PWR7" H 2400 6800 50  0001 C CNN
@@ -106,7 +70,7 @@ F 3 "" H 2400 6950 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P3
+L oh_stepper_driver-rescue:CONN_01X02 P3
 U 1 1 587BB2BD
 P 2050 7050
 F 0 "P3" H 2128 7091 50  0000 L CNN
@@ -117,7 +81,7 @@ F 3 "" H 2050 7050 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CP1 C6
+L oh_stepper_driver-rescue:CP1 C6
 U 1 1 587C438D
 P 3000 7150
 F 0 "C6" H 3115 7196 50  0000 L CNN
@@ -130,7 +94,7 @@ $EndComp
 Text Notes 4800 6950 0    60   ~ 0
 100uF: EMVY101ARA101MKE0S \n10uF:  22201C106MAT2A 
 $Comp
-L C_Small C9
+L oh_stepper_driver-rescue:C_Small C9
 U 1 1 587C4622
 P 4400 7150
 F 0 "C9" H 4492 7196 50  0000 L CNN
@@ -141,7 +105,7 @@ F 3 "" H 4400 7150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C8
+L oh_stepper_driver-rescue:C_Small C8
 U 1 1 587C46C4
 P 4000 7150
 F 0 "C8" H 4092 7196 50  0000 L CNN
@@ -152,7 +116,7 @@ F 3 "" H 4000 7150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C7
+L oh_stepper_driver-rescue:C_Small C7
 U 1 1 587C4987
 P 3550 7150
 F 0 "C7" H 3642 7196 50  0000 L CNN
@@ -163,7 +127,7 @@ F 3 "" H 3550 7150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR10
+L power:GND #PWR10
 U 1 1 587BC837
 P 3000 7550
 F 0 "#PWR10" H 3000 7300 50  0001 C CNN
@@ -174,7 +138,7 @@ F 3 "" H 3000 7550 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L VM #PWR9
+L oh_stepper_driver-rescue:VM #PWR9
 U 1 1 587BC83D
 P 3000 6850
 F 0 "#PWR9" H 3000 6700 50  0001 C CNN
@@ -203,7 +167,7 @@ F12 "FAULTn" O L 8125 4000 60
 F13 "STALLn" O L 8125 4100 60 
 $EndSheet
 $Comp
-L ABM8G X1
+L abm8g:ABM8G X1
 U 1 1 587F2A0B
 P 1125 3325
 F 0 "X1" H 1050 3500 60  0000 C CNN
@@ -214,7 +178,7 @@ F 3 "" H 1125 3325 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C13
+L oh_stepper_driver-rescue:C_Small C13
 U 1 1 587F2D1A
 P 1425 3875
 F 0 "C13" H 1517 3921 50  0000 L CNN
@@ -225,7 +189,7 @@ F 3 "" H 1425 3875 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C10
+L oh_stepper_driver-rescue:C_Small C10
 U 1 1 587F2E99
 P 825 3875
 F 0 "C10" H 917 3921 50  0000 L CNN
@@ -236,7 +200,7 @@ F 3 "" H 825 3875 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C12
+L oh_stepper_driver-rescue:C_Small C12
 U 1 1 587F3123
 P 7725 1475
 F 0 "C12" H 7817 1521 50  0000 L CNN
@@ -247,7 +211,7 @@ F 3 "" H 7725 1475 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C14
+L oh_stepper_driver-rescue:C_Small C14
 U 1 1 587F3193
 P 8150 1475
 F 0 "C14" H 8242 1521 50  0000 L CNN
@@ -258,7 +222,7 @@ F 3 "" H 8150 1475 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C11
+L oh_stepper_driver-rescue:C_Small C11
 U 1 1 587F321B
 P 1900 1425
 F 0 "C11" H 1992 1471 50  0000 L CNN
@@ -269,7 +233,7 @@ F 3 "" H 1900 1425 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R13
+L oh_stepper_driver-rescue:R R13
 U 1 1 587F34F0
 P 1925 2200
 F 0 "R13" H 1995 2246 50  0000 L CNN
@@ -280,7 +244,7 @@ F 3 "" H 1925 2200 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR3
+L power:GND #PWR3
 U 1 1 587F3A6D
 P 1125 4150
 F 0 "#PWR3" H 1125 3900 50  0001 C CNN
@@ -291,7 +255,7 @@ F 3 "" H 1125 4150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR12
+L power:GND #PWR12
 U 1 1 587F4021
 P 3800 5675
 F 0 "#PWR12" H 3800 5425 50  0001 C CNN
@@ -302,7 +266,7 @@ F 3 "" H 3800 5675 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR11
+L power:+3V3 #PWR11
 U 1 1 587F4D80
 P 3500 1100
 F 0 "#PWR11" H 3500 950 50  0001 C CNN
@@ -313,7 +277,7 @@ F 3 "" H 3500 1100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C15
+L oh_stepper_driver-rescue:C_Small C15
 U 1 1 587F4FCA
 P 5375 1475
 F 0 "C15" H 5467 1521 50  0000 L CNN
@@ -324,7 +288,7 @@ F 3 "" H 5375 1475 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C16
+L oh_stepper_driver-rescue:C_Small C16
 U 1 1 587F5042
 P 5800 1475
 F 0 "C16" H 5892 1521 50  0000 L CNN
@@ -335,7 +299,7 @@ F 3 "" H 5800 1475 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C17
+L oh_stepper_driver-rescue:C_Small C17
 U 1 1 587F50F4
 P 6225 1475
 F 0 "C17" H 6317 1521 50  0000 L CNN
@@ -346,7 +310,7 @@ F 3 "" H 6225 1475 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C18
+L oh_stepper_driver-rescue:C_Small C18
 U 1 1 587F50FA
 P 6650 1475
 F 0 "C18" H 6742 1521 50  0000 L CNN
@@ -357,7 +321,7 @@ F 3 "" H 6650 1475 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR15
+L power:+3V3 #PWR15
 U 1 1 587F53E0
 P 5375 1250
 F 0 "#PWR15" H 5375 1100 50  0001 C CNN
@@ -368,7 +332,7 @@ F 3 "" H 5375 1250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR16
+L power:GND #PWR16
 U 1 1 587F53FA
 P 5375 1700
 F 0 "#PWR16" H 5375 1450 50  0001 C CNN
@@ -397,7 +361,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 6900 4400 7050
 Wire Wire Line
-	3000 6850 3000 7000
+	3000 6850 3000 6900
 Wire Wire Line
 	3550 7050 3550 6900
 Connection ~ 3550 6900
@@ -405,7 +369,7 @@ Wire Wire Line
 	4000 7050 4000 6900
 Connection ~ 4000 6900
 Wire Wire Line
-	3000 7300 3000 7550
+	3000 7300 3000 7450
 Wire Wire Line
 	4400 7450 4400 7250
 Wire Wire Line
@@ -415,22 +379,20 @@ Wire Wire Line
 	3550 7250 3550 7450
 Connection ~ 3550 7450
 Wire Wire Line
-	825  3325 825  3775
-Wire Wire Line
 	1075 3725 1075 3775
 Wire Wire Line
-	1075 3775 1175 3775
+	1075 3775 1125 3775
 Wire Wire Line
 	1175 3775 1175 3725
 Wire Wire Line
-	1425 3200 1425 3775
+	1425 3200 1425 3325
 Wire Wire Line
-	1125 3775 1125 4150
+	1125 3775 1125 4075
 Connection ~ 1125 3775
 Wire Wire Line
 	825  3975 825  4075
 Wire Wire Line
-	825  4075 1425 4075
+	825  4075 1125 4075
 Connection ~ 1125 4075
 Wire Wire Line
 	1425 4075 1425 3975
@@ -439,9 +401,6 @@ Wire Wire Line
 Connection ~ 1425 3325
 Wire Wire Line
 	2825 3100 825  3100
-Wire Wire Line
-	825  3100 825  3350
-Connection ~ 825  3350
 Wire Wire Line
 	3650 5500 3650 5600
 Connection ~ 3850 5600
@@ -453,9 +412,9 @@ Wire Wire Line
 	3750 5500 3750 5600
 Connection ~ 3750 5600
 Wire Wire Line
-	4100 1075 4100 1600
+	4100 1075 4100 1225
 Wire Wire Line
-	3500 1100 3500 1600
+	3500 1100 3500 1225
 Wire Wire Line
 	3800 1500 3800 1600
 Connection ~ 3800 1500
@@ -468,13 +427,13 @@ Connection ~ 3700 1500
 Wire Wire Line
 	6650 1300 6650 1375
 Wire Wire Line
-	5375 1300 6650 1300
+	5375 1300 5800 1300
 Wire Wire Line
-	5375 1250 5375 1375
+	5375 1250 5375 1300
 Wire Wire Line
-	5375 1575 5375 1700
+	5375 1575 5375 1675
 Wire Wire Line
-	5375 1675 6650 1675
+	5375 1675 5800 1675
 Wire Wire Line
 	6650 1675 6650 1575
 Wire Wire Line
@@ -492,9 +451,9 @@ Connection ~ 6225 1675
 Connection ~ 5375 1675
 Connection ~ 5375 1300
 Wire Wire Line
-	3500 1500 4000 1500
+	3500 1500 3700 1500
 $Comp
-L C_Small C19
+L oh_stepper_driver-rescue:C_Small C19
 U 1 1 587F5A85
 P 7100 1450
 F 0 "C19" H 7192 1496 50  0000 L CNN
@@ -505,7 +464,7 @@ F 3 "" H 7100 1450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3VADC #PWR17
+L power:+3.3VADC #PWR17
 U 1 1 587F5AA0
 P 7100 1275
 F 0 "#PWR17" H 7250 1225 50  0001 C CNN
@@ -516,7 +475,7 @@ F 3 "" H 7100 1275 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDA #PWR18
+L power:GNDA #PWR18
 U 1 1 587F5ADA
 P 7100 1600
 F 0 "#PWR18" H 7100 1350 50  0001 C CNN
@@ -531,7 +490,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 1550 7100 1600
 $Comp
-L +3.3VADC #PWR14
+L power:+3.3VADC #PWR14
 U 1 1 587F5C3A
 P 4100 1075
 F 0 "#PWR14" H 4250 1025 50  0001 C CNN
@@ -542,14 +501,14 @@ F 3 "" H 4100 1075 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 5600 3950 5600
+	3650 5600 3750 5600
 Wire Wire Line
 	3850 5500 3850 5600
 Wire Wire Line
 	3800 5675 3800 5600
 Connection ~ 3800 5600
 $Comp
-L GNDA #PWR13
+L power:GNDA #PWR13
 U 1 1 587F63C7
 P 4050 5675
 F 0 "#PWR13" H 4050 5425 50  0001 C CNN
@@ -656,7 +615,7 @@ DIR_AIN2
 Text Label 5575 3100 2    60   ~ 0
 RESET
 $Comp
-L SWITCH_INV SW1
+L oh_stepper_driver-rescue:SWITCH_INV SW1
 U 1 1 5897BFF2
 P 1225 2200
 F 0 "SW1" H 1225 1885 50  0000 C CNN
@@ -667,7 +626,7 @@ F 3 "" H 1225 2200 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3V3 #PWR1
+L power:+3V3 #PWR1
 U 1 1 5897C965
 P 725 2025
 F 0 "#PWR1" H 725 1875 50  0001 C CNN
@@ -678,7 +637,7 @@ F 3 "" H 725 2025 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR2
+L power:GND #PWR2
 U 1 1 5897C9DD
 P 725 2350
 F 0 "#PWR2" H 725 2100 50  0001 C CNN
@@ -697,7 +656,7 @@ Wire Wire Line
 Wire Wire Line
 	2075 2200 2825 2200
 $Comp
-L SW_PUSH SW2
+L oh_stepper_driver-rescue:SW_PUSH SW2
 U 1 1 5897DD6B
 P 2125 1400
 F 0 "SW2" V 2079 1518 50  0000 L CNN
@@ -708,7 +667,7 @@ F 3 "" H 2125 1400 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR6
+L power:GND #PWR6
 U 1 1 5897E497
 P 1900 1775
 F 0 "#PWR6" H 1900 1525 50  0001 C CNN
@@ -723,17 +682,17 @@ Wire Wire Line
 Wire Wire Line
 	2500 2000 2500 1100
 Wire Wire Line
-	2500 1100 1900 1100
+	2500 1100 2125 1100
 Wire Wire Line
 	1900 1100 1900 1325
 Connection ~ 2125 1100
 Wire Wire Line
 	2125 1700 1900 1700
 Wire Wire Line
-	1900 1525 1900 1775
+	1900 1525 1900 1700
 Connection ~ 1900 1700
 $Comp
-L STM32F446RCTx U2
+L stm32f446_lqfp64:STM32F446RCTx U2
 U 1 1 5897CB81
 P 3850 3600
 F 0 "U2" H 2975 5550 50  0000 C CNN
@@ -744,7 +703,7 @@ F 3 "" H 3800 3600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR20
+L power:+3V3 #PWR20
 U 1 1 5897DB0B
 P 7725 1325
 F 0 "#PWR20" H 7725 1175 50  0001 C CNN
@@ -755,7 +714,7 @@ F 3 "" H 7725 1325 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3VADC #PWR22
+L power:+3.3VADC #PWR22
 U 1 1 5897DB11
 P 8150 1300
 F 0 "#PWR22" H 8300 1250 50  0001 C CNN
@@ -766,7 +725,7 @@ F 3 "" H 8150 1300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L L_Small L1
+L oh_stepper_driver-rescue:L_Small L1
 U 1 1 5897DBE2
 P 3800 1225
 F 0 "L1" V 3985 1225 50  0000 C CNN
@@ -808,7 +767,7 @@ Wire Wire Line
 Text Label 5575 4100 2    60   ~ 0
 NJTRST
 $Comp
-L CONN_02X03 J1
+L oh_stepper_driver-rescue:CONN_02X03 J1
 U 1 1 58993DC8
 P 7900 5225
 F 0 "J1" H 7900 5540 50  0000 C CNN
@@ -839,7 +798,7 @@ Wire Wire Line
 Text Label 7325 5225 0    60   ~ 0
 NJTRST
 $Comp
-L GND #PWR19
+L power:GND #PWR19
 U 1 1 5899498D
 P 7625 5375
 F 0 "#PWR19" H 7675 5425 50  0001 C CNN
@@ -854,7 +813,7 @@ Wire Wire Line
 Wire Wire Line
 	7625 5325 7625 5375
 $Comp
-L GNDA #PWR23
+L power:GNDA #PWR23
 U 1 1 58995E10
 P 8150 1650
 F 0 "#PWR23" H 8150 1400 50  0001 C CNN
@@ -865,7 +824,7 @@ F 3 "" H 8150 1650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR21
+L power:GND #PWR21
 U 1 1 58995E53
 P 7725 1650
 F 0 "#PWR21" H -25 -300 50  0001 C CNN
@@ -884,13 +843,13 @@ Wire Wire Line
 Wire Wire Line
 	8150 1650 8150 1575
 Wire Wire Line
-	3000 6900 4400 6900
+	3000 6900 3550 6900
 Connection ~ 3000 6900
 Wire Wire Line
-	3000 7450 4400 7450
+	3000 7450 3550 7450
 Connection ~ 3000 7450
 $Comp
-L TJA1050 U3
+L tja1050:TJA1050 U3
 U 1 1 58A846F4
 P 6350 5450
 F 0 "U3" H 6375 4806 60  0000 C CNN
@@ -901,7 +860,7 @@ F 3 "" H 650 500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AS5047D U4
+L as5047d:AS5047D U4
 U 1 1 58AA2264
 P 9350 5525
 F 0 "U4" H 9350 6112 60  0000 C CNN
@@ -911,4 +870,60 @@ F 3 "" H 75  0   60  0001 C CNN
 	1    9350 5525
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3550 6900 4000 6900
+Wire Wire Line
+	4000 6900 4400 6900
+Wire Wire Line
+	4000 7450 4400 7450
+Wire Wire Line
+	3550 7450 4000 7450
+Wire Wire Line
+	1125 3775 1175 3775
+Wire Wire Line
+	1125 4075 1125 4150
+Wire Wire Line
+	1125 4075 1425 4075
+Wire Wire Line
+	1425 3325 1425 3775
+Wire Wire Line
+	3850 5600 3950 5600
+Wire Wire Line
+	3750 5600 3800 5600
+Wire Wire Line
+	3800 1500 3900 1500
+Wire Wire Line
+	3900 1500 4000 1500
+Wire Wire Line
+	3700 1500 3800 1500
+Wire Wire Line
+	6225 1300 6650 1300
+Wire Wire Line
+	5800 1300 6225 1300
+Wire Wire Line
+	5800 1675 6225 1675
+Wire Wire Line
+	6225 1675 6650 1675
+Wire Wire Line
+	5375 1675 5375 1700
+Wire Wire Line
+	5375 1300 5375 1375
+Wire Wire Line
+	3800 5600 3850 5600
+Wire Wire Line
+	2125 1100 1900 1100
+Wire Wire Line
+	1900 1700 1900 1775
+Wire Wire Line
+	4100 1225 4100 1600
+Wire Wire Line
+	3500 1225 3500 1500
+Wire Wire Line
+	3500 1500 3500 1600
+Wire Wire Line
+	3000 6900 3000 7000
+Wire Wire Line
+	3000 7450 3000 7550
+Wire Wire Line
+	825  3100 825  3775
 $EndSCHEMATC

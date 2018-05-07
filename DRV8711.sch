@@ -1,40 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:csd18531q5a
-LIBS:drv8711
-LIBS:stm32f446_lqfp64
-LIBS:abm8g
-LIBS:oh_stepper_driver-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:tja1050
-LIBS:as5047d
+EESchema Schematic File Version 4
 LIBS:oh_stepper_driver-cache
 EELAYER 26 0
 EELAYER END
@@ -51,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L GND #PWR26
+L power:GND #PWR26
 U 1 1 587A445C
 P 3950 5000
 F 0 "#PWR26" H 3950 4750 50  0001 C CNN
@@ -94,7 +58,7 @@ B2HS
 Text Label 5050 4350 2    60   ~ 0
 BOUT2
 $Comp
-L C_Small C5
+L oh_stepper_driver-rescue:C_Small C5
 U 1 1 587A4D91
 P 5050 4600
 F 0 "C5" H 5142 4646 50  0000 L CNN
@@ -105,7 +69,7 @@ F 3 "" H 5050 4600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR27
+L power:GND #PWR27
 U 1 1 587A506C
 P 5050 4800
 F 0 "#PWR27" H 5050 4550 50  0001 C CNN
@@ -116,7 +80,7 @@ F 3 "" H 5050 4800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C1
+L oh_stepper_driver-rescue:C_Small C1
 U 1 1 587A2B22
 P 2150 3050
 F 0 "C1" H 2242 3096 50  0000 L CNN
@@ -127,7 +91,7 @@ F 3 "" H 2150 3050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C3
+L oh_stepper_driver-rescue:C_Small C3
 U 1 1 587A2EDF
 P 2500 2500
 F 0 "C3" H 2592 2546 50  0000 L CNN
@@ -138,7 +102,7 @@ F 3 "" H 2500 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C2
+L oh_stepper_driver-rescue:C_Small C2
 U 1 1 587A2F5D
 P 2300 2300
 F 0 "C2" H 2392 2346 50  0000 L CNN
@@ -149,7 +113,7 @@ F 3 "" H 2300 2300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C4
+L oh_stepper_driver-rescue:C_Small C4
 U 1 1 587A2F63
 P 2600 3050
 F 0 "C4" H 2692 3096 50  0000 L CNN
@@ -200,7 +164,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 4900 3800 4950
 Wire Wire Line
-	3800 4950 4100 4950
+	3800 4950 3900 4950
 Wire Wire Line
 	4100 4950 4100 4900
 Wire Wire Line
@@ -237,7 +201,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 4600 2525 4600
 $Comp
-L GND #PWR25
+L power:GND #PWR25
 U 1 1 587A44CC
 P 2150 3225
 F 0 "#PWR25" H 2150 2975 50  0001 C CNN
@@ -254,10 +218,10 @@ Wire Wire Line
 Wire Wire Line
 	2600 3175 2150 3175
 Wire Wire Line
-	2150 3150 2150 3225
+	2150 3150 2150 3175
 Connection ~ 2150 3175
 $Comp
-L VM #PWR24
+L oh_stepper_driver-rescue:VM #PWR24
 U 1 1 587A4A3A
 P 2150 2100
 F 0 "#PWR24" H 2150 1950 50  0001 C CNN
@@ -284,7 +248,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 2650 2300 2400
 Wire Wire Line
-	2150 2100 2150 2750
+	2150 2100 2150 2150
 Wire Wire Line
 	2150 2150 2300 2150
 Wire Wire Line
@@ -293,7 +257,7 @@ Wire Wire Line
 	2150 2750 2900 2750
 Connection ~ 2150 2150
 $Comp
-L DRV8711 U1
+L drv8711:DRV8711 U1
 U 1 1 587A59C2
 P 3800 3450
 F 0 "U1" H 3150 4675 60  0000 C CNB
@@ -382,7 +346,7 @@ Wire Wire Line
 Wire Wire Line
 	8750 3100 9300 3100
 $Comp
-L CONN_01X04 P1
+L oh_stepper_driver-rescue:CONN_01X04 P1
 U 1 1 587B6637
 P 9650 2800
 F 0 "P1" H 9728 2841 50  0000 L CNN
@@ -436,4 +400,14 @@ Text HLabel 2525 4500 0    60   Output ~ 0
 FAULTn
 Text HLabel 2525 4600 0    60   Output ~ 0
 STALLn
+Wire Wire Line
+	4000 4950 4100 4950
+Wire Wire Line
+	3900 4950 3950 4950
+Wire Wire Line
+	3950 4950 4000 4950
+Wire Wire Line
+	2150 3175 2150 3225
+Wire Wire Line
+	2150 2150 2150 2750
 $EndSCHEMATC
